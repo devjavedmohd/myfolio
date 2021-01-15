@@ -1,0 +1,212 @@
+/*
+.small-12{
+    max-width: 640px;
+    width: 100%;
+}
+.medium-6{
+    max-width: 1024px;
+    width: 100%;
+}
+.large-4{
+    max-width: 1140px;
+    width: 100%;
+}
+ */
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-work {
+  max-width: 1024px;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #000;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+.about-content {
+  display: flex;
+
+  .pic-about {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    .one-bg{
+      position: absolute;
+      z-index: 1;
+      width:300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: white;
+      left: 0;
+      top:10%;
+    }
+    .two-bg{
+      position: absolute;
+      z-index: 2;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ecfbff;
+      right: 0;
+      top:25%;
+    }
+    .three-bg{
+      position: absolute;
+      z-index: 3;
+      width:100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      left: 0;
+      bottom: 20%;
+    }
+    .pic {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: 5;
+      img {
+        max-width: 100%;
+      }
+    }
+    .html-bg,
+    .css-bg,
+    .bootstrap-bg,
+    .js-bg,
+    .vue-bg,
+    .sass-bg{
+      position: absolute;
+      background-color: #fff;
+      border-radius: 50%;
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .html-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 4;
+      top: 15%;
+    }
+    .css-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 4;
+      top: 25%;
+      left: 20px;
+    }
+    .bootstrap-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 5;
+      top: 25%;
+      right: 30px;
+    }
+    .js-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 4;
+      top: 40%;
+      right: 90px;
+    }
+    .vue-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 6;
+      bottom: 40%;
+      right: 90px;
+    }
+    .sass-bg{
+      width: 50px;
+      height: 50px;
+      z-index: 6;
+      bottom: 30%;
+      left: 90px;
+    }
+  }
+  .about-details{
+    width: 60%;
+    margin: 150px auto;
+    text-align: left;
+    padding-right: 50px;
+
+    .title {
+      font-family: LinetoLight;
+      font-size: 26px;
+      margin: 0px auto 20px auto;
+      span {
+        text-decoration: unset;
+        font-family: LinetoBold;
+        font-size: 20px;
+      }
+    }
+    .about-exp {
+      font-family: LinetoBlack;
+      font-size: 50px;
+      line-height: 1.24;
+      margin: 0px auto 20px auto;
+    }
+    .about-more {
+      font-family: LinetoLight;
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0px auto 40px auto;
+    }
+    .connect {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
+      .connect-about {
+        background: var(--btnblue);
+        color: #fff;
+        font-family: 'LinetoBold';
+        padding: 16px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        box-shadow: 0px 4px 7px rgba(0,0,0,.1);
+      }
+      .connect-about.explore {
+        border: 2px solid #333;
+        background: transparent;
+        color: #333;
+      }
+    }
+  }
+}

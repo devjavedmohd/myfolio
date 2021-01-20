@@ -10,11 +10,17 @@
     line-height: 1;
     outline: none;
 }
+.img-resp{
+    max-width: 100%;
+    width: 100%
+}
 body {
     background-image: linear-gradient(to right, var(--lightblue) , var(--lightpink));
     font-family: LinetoBook;
 }
-
+.times{
+    font-family: "Times New Roman";
+}
 .clickable {
     cursor: pointer;
 }
